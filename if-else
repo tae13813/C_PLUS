@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void main(){
+	int p;//p=point
+	cout<<"enter point : ";
+	cin>>p;
+	if(p>100){
+		cout<<"error\n";}
+	else if(p>=90){
+		cout<<"grade A\n";}
+	else if(p>=80){
+		cout<<"grade B\n";}
+	else if(p>=70){
+		cout<<"grade C\n";}
+	else if(p>=60){
+		cout<<"grade D\n";}
+	else {
+		cout<<"grade F\n";}
+
+}
