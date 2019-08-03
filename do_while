@@ -1,0 +1,53 @@
+#include <iostream>
+#include<string>
+using namespace std;
+ int main()
+{
+	string q;
+	string m;//m=menu
+	string ru;//register-user
+	int rp;//register-password
+	string lu;//login-user
+	int lp;//login-password 
+	do
+	{
+		cout << "MENU" << endl;
+		cout << "1.register" << endl;
+		cout << "2.login" << endl;
+		cout << "q.exit" << endl;
+
+
+		cout << "enter choice : ";
+		cin >> m;
+		if (m == "1")
+		{
+			cout << "register" << endl;
+			cout << "input user : ";
+			cin >> ru;
+			cout << "input password : ";
+			cin >> rp;
+			cout << "successfully"<<endl;
+		}
+		else if (m == "2")
+		{
+			cout << "login" << endl;
+			cout << "input user :";
+			cin >> lu;
+			cout << "input password : ";
+			cin >> lp;
+			if (lu != ru)
+			{
+				cout << "user or password incorrect"<<endl;
+			}
+			else if (lp != rp)
+			{
+				cout << "user or password incorrect"<<endl;
+			}
+		}
+
+	} while (m != "q");
+	
+	
+
+
+}
