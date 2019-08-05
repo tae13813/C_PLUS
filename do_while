@@ -30,24 +30,25 @@ using namespace std;
 		}
 		else if (m == "2")
 		{
+			
 			cout << "login" << endl;
 			cout << "input user :";
 			cin >> lu;
 			cout << "input password : ";
 			cin >> lp;
-			if (lu != ru)
+			if (ru == lu && rp == lp )
 			{
-				cout << "user or password incorrect"<<endl;
+				cout << "user or password correct"<<endl;
 			}
-			else if (lp != rp)
+			else if (ru != lu && rp != lp)
 			{
 				cout << "user or password incorrect"<<endl;
 			}
 		}
 
 	} while (m != "q");
-	
-	
 
+
+return(0);
 
 }
