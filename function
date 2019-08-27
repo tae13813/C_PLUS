@@ -4,28 +4,28 @@ using namespace std;
 void checknum(int);
 int main()
 {
-	cout<<"WELCOME TO THE GAME\n";
-	int num,number,n=1;
+	cout << "WELCOME TO THE GAME\n";
+	int num, number, n = 1;
+	srand(time(NULL));
+	number = 1 + rand() % 10;
 	do
 	{
-		srand(time(NULL));
-		cout<<"enter number"<<" "<<n++<<" "<<"(1-10) :";
-		cin>>num;
-		number=1+rand()%10;
+		cout << "enter number" << " " << n++ << " " << "(1-10) :";
+		cin >> num;
 
-void checknum(int num );
+		void checknum(int num);
 
-	if(num>number)
-	{
-		cout<<"The secret number is hight\n";
-	}
-	else if(num<number)
-		cout<<"The secret number is lower\n";
-	else
-	{
-		cout<<"Congratulations!\n";
-	}
-		
-	}while(num!=number);
+		if (num > number)
+		{
+			cout << "The secret number is hight\n";
+		}
+		else if (num < number)
+			cout << "The secret number is lower\n";
+		else
+		{
+			cout << "Congratulations!\n";
+		}
+
+	} while (num != number);
 	return(0);
 }
